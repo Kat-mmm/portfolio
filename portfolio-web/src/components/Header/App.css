@@ -1,0 +1,123 @@
+.container{
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.container img{
+    width: 25vw;
+    height: 50vh;
+    border-radius: 50%;
+    margin-top: 25vh;
+    object-fit: cover;
+    animation: myAnim 3s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateX(48px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateX(26px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateX(13px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateX(6.5px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateX(4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87%,
+	98% {
+		animation-timing-function: ease-out;
+		transform: translateX(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.header{
+    color: white;
+    width: 50vw;
+    margin-left: 15vw;
+    margin-top: 0;
+}
+
+h1{
+    margin-left: 5vw;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+p{
+    margin-left: 5vw;
+}
+
+.h1{
+    margin-left: 1.5vw;
+}
+
+.job{
+    border-right: solid 3px white;
+
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+
+    animation: 
+        type 2.9s steps(18) 1s forwards,
+        blink 0.9s steps(1) infinite;
+}
+
+@keyframes type {
+    to { width: 15ch }
+}
+
+@keyframes blink {
+    from { border-color:  transparent }
+    50% { border-color: white}
+    to { border-color: transparent }
+}
+
+h5{
+    font-family: 'Alex Brush';
+    color: #0fff50;
+    font-size: 30px;
+    font-weight: 200;
+    margin-left: -4vw;
+    opacity: 1;
+}
+
+p{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.8rem;
+    margin-top: -13px;
+}
